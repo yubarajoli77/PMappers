@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PMappers</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="location_search">Discover RestRooms Near You</string>
+    <string name="location_search_along_way">Locate Restroom along your way</string>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.softechfoundation.pmappers.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/pmapperLogo"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/pmappers_luncher" />
+
+    <RelativeLayout
+        android:id="@+id/search_along_way"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/pmapperLogo"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/locate_toilet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="4dp"
+            android:gravity="center"
+            android:text="@string/location_search"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txt_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/locate_toilet"
+            android:layout_marginTop="2dp"
+
+            android:background="@drawable/input_box_design"
+            android:hint="Location..."
+            android:padding="8dp"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txt_location"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_style"
+            android:text="Search By Location"
+            android:textColor="#ffffff"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/search_along_way"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/locate_toilet_along_way"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="#000000"
+            android:text="@string/location_search_along_way" />
+
+        <EditText
+            android:id="@+id/txt_location_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/locate_toilet_along_way"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/input_box_design"
+            android:hint="Start Location..."
+            android:padding="8dp" />
+        <EditText
+            android:id="@+id/txt_location_end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txt_location_start"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/input_box_design"
+            android:hint="End Location..."
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btn_find"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button_style"
+            android:layout_below="@+id/txt_location_end"
+            android:text="Find"
+            android:textColor="#ffffff"/>
+    </RelativeLayout>
+
+</android.widget.RelativeLayout>
